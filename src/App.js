@@ -1,5 +1,7 @@
 import logo from './logo.svg';
-import './App.css';
+import './App.css'; 
+
+const text = "test";
 
 function App() {
   return (

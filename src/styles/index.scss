@@ -1,0 +1,10 @@
+@import "./normalize.scss";
+@import "./banner.scss";
+@import "./header.scss";
+@import "./section.scss";
+
+.my-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

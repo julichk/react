@@ -1,0 +1,93 @@
+.conteiner{
+  //background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner_form{
+  background-color: rgb(255, 106, 0);
+  display: flex;
+
+  &_input{
+    font-family: 'IBM Plex Sans', serif;
+    font-size: 36px;
+    color: rgb(255, 255, 255);
+    background: #473151ce;
+    width: 550px;
+    padding: 8px 82px 11px 32px;
+    border-radius: 30px 0px 0px 30px;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+
+  &_button{
+    border-radius: 0px 30px 30px 0px;
+    background: rgb(67, 213, 30);
+    width: 111px;
+
+  }
+}
+
+.conteiner_checkbox{
+  background: #473151ce;
+  padding: 20px;
+  display: flex;
+  justify-content: start;
+  gap: 26px;
+
+  &_text{
+    font-family: 'IBM Plex Sans', serif;
+    font-size: 36px;
+    color: rgba(255, 255, 255);
+    width: 100%;
+  }
+}
+
+.conteiner_checkbox_check {
+  -webkit-appearance: none;
+  background-color: #473151ce;
+  border: 2px solid rgba(191, 86, 255, 0.79);
+  width: 44px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:after {
+    content: url("../Check.svg");
+    font-size: 26px;
+    position: absolute;
+    z-index: 0;
+    color: #fbfdfb;
+    display: none; 
+  }
+
+  &:checked {
+    + label {
+      color: rgba(15, 144, 162, 0.57);
+      text-decoration: line-through rgba(255, 255, 255, 0.5);
+    }
+  }
+}
+
+.conteiner_checkbox_check:checked {
+  background: linear-gradient(111.35deg, #E600FA 10.12%, rgba(82, 97, 234, 0) 82.22%);
+  width: 44px;
+  height: 40px;
+  
+  &:after {
+    display: block; 
+  }
+}
+
+.note-box{
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
